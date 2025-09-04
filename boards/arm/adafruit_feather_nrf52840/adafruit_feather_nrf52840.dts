@@ -32,8 +32,8 @@
 
 	buttons {
 		compatible = "gpio-keys";
-		button_start: button_start { gpios = <&gpio0 8 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; label = "START"; };
-		button_select: button_select { gpios = <&gpio0 24 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; label = "SELECT"; };
+		button-start: button_start { gpios = <&gpio0 8 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; label = "START"; };
+		button-select: button_select { gpios = <&gpio0 24 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; label = "SELECT"; };
 		button_y: button_y { gpios = <&gpio0 6 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; label = "Y"; };
 		button_x: button_x { gpios = <&gpio0 11 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; label = "X"; };
 		button_b: button_b { gpios = <&gpio0 10 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; label = "B"; };
@@ -49,18 +49,18 @@
 	aliases {
 		led0 = &led0;
 		led1 = &led1;
-		btn_start = &button_start;
-		btn_select = &button_select;
-		btn_y = &button_y;
-		btn_x = &button_x;
-		btn_b = &button_b;
-		btn_a = &button_a;
-		btn_zr = &button_zr;
-		btn_zl = &button_zl;
-		btn_rb = &button_rb;
-		btn_lb = &button_lb;
-		btn_l3 = &button_l3;
-		btn_r3 = &button_r3;
+		btn-start = &button_start;
+		btn-select = &button_select;
+		btn-y = &button_y;
+		btn-x = &button_x;
+		btn-b = &button_b;
+		btn-a = &button_a;
+		btn-zr = &button_zr;
+		btn-zl = &button_zl;
+		btn-rb = &button_rb;
+		btn-lb = &button_lb;
+		btn-l3 = &button_l3;
+		btn-r3 = &button_r3;
 	};
 
 	adc_left_x: adc_left_x {
