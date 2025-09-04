@@ -32,8 +32,8 @@
 
 	buttons {
 		compatible = "gpio-keys";
-		button-start: button_start { gpios = <&gpio0 8 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; label = "START"; };
-		button-select: button_select { gpios = <&gpio0 24 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; label = "SELECT"; };
+		button_start: button_start { gpios = <&gpio0 8 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; label = "START"; };
+		button_select: button_select { gpios = <&gpio0 24 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; label = "SELECT"; };
 		button_y: button_y { gpios = <&gpio0 6 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; label = "Y"; };
 		button_x: button_x { gpios = <&gpio0 11 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; label = "X"; };
 		button_b: button_b { gpios = <&gpio0 10 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>; label = "B"; };
