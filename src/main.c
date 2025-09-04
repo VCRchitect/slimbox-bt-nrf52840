@@ -32,6 +32,7 @@ LOG_MODULE_REGISTER(gamepad, LOG_LEVEL_DBG);
 #define CONNECTED_SLEEP_TIMEOUT K_SECONDS(600)
 #define SYS_BUTTON_LONG_PRESS_MS 3000
 #define SYS_BUTTON_VERY_LONG_PRESS_MS 10000
+#define CHK(x) do { int ret = (x); if (ret) { printk("Error %d at %s:%d\n", ret, __FILE__, __LINE__); return; } } while(0)
 
 #define DPAD_ADC_RESOLUTION 12
 #define DPAD_ADC_GAIN ADC_GAIN_1
@@ -321,10 +322,10 @@ static void handle_buttons() {
     report.x = gpio_pin_get_dt(&buttons[3]);
     report.b = gpio_pin_get_dt(&buttons[4]);
     report.a = gpio_pin_get_dt(&buttons[5]);
-    report.zr = gpio_pin_get_dt(&buttons[6]);
-    report.zl = gpio_pin_get_dt(&buttons[7]);
-    report.rb = gpio_pin_get_dt(&buttons[8]);
-    report.lb = gpio_pin_get_dt(&buttons[9]);
+    report.r2 = gpio_pin_get_dt(&buttons[6]);
+    report.l2 = gpio_pin_get_dt(&buttons[7]);
+    report.r1 = gpio_pin_get_dt(&buttons[8]);
+    report.l1 = gpio_pin_get_dt(&buttons[9]);
     report.l3 = gpio_pin_get_dt(&buttons[10]);
     report.r3 = gpio_pin_get_dt(&buttons[11]);
 
