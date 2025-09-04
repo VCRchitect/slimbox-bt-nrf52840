@@ -39,7 +39,7 @@ LOG_MODULE_REGISTER(gamepad, LOG_LEVEL_DBG);
 #define DPAD_ADC_ACQUISITION_TIME ADC_ACQ_TIME_DEFAULT
 #define DPAD_CENTER 2048
 #define DPAD_DEADZONE 300
-
+ 
 struct __attribute__((packed)) report_t {
     uint8_t dpad;
     uint8_t capture : 1;
