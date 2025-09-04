@@ -21,7 +21,7 @@
 #include <bluetooth/services/hids.h>
 #include <zephyr/bluetooth/services/bas.h>
 #include <zephyr/bluetooth/services/dis.h>
-
+ 
 LOG_MODULE_REGISTER(gamepad, LOG_LEVEL_DBG);
 
 #define REPORT_ID 3
